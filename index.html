@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Piranha.Studio</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        @font-face {
+            font-family: FZLanTingHei; /*这里是说明调用来的字体名字*/
+            src: url("./fonts/FZLanTingHei.woff"); /*这里是字体文件路径*/
+        }
+
+        body {
+            font-family: Arial, FZLanTingHei;
+        }
+
+        .navFixedBg {
+            background: rgba(0, 0, 0, .85);
+        }
+
+        .navbar-piranha {
+            border: none;
+        }
+
+        .navbar-piranha .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-piranha .navbar-nav > li > a {
+            background: none;
+            color: #999;
+            border: none;
+        }
+
+        .navbar-piranha .navbar-nav > .active > a,
+        .navbar-piranha .navbar-nav > .active > a:hover,
+        .navbar-piranha .navbar-nav > .active > a:focus {
+            border: none;
+            background: none;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-piranha .navbar-nav > .open > a,
+        .navbar-piranha .navbar-nav > .open > a:hover,
+        .navbar-piranha .navbar-nav > .open > a:focus {
+            color: #fff;
+            background: rgba(0, 0, 0, .9);
+        }
+
+        .navbar-piranha .navbar-nav .dropdown-menu {
+            background: rgba(0, 0, 0, .9);
+        }
+
+        .navbar-piranha .navbar-nav .dropdown-menu li a {
+            color: #999;
+        }
+
+        .navbar-piranha .navbar-nav .dropdown-menu li a:hover,
+        .navbar-piranha .navbar-nav .dropdown-menu li a:focus {
+            background: rgba(0, 0, 0, .5);
+            color: #ccc;
+        }
+
+        .navbar-piranha .navbar-nav .dropdown-menu .dropdown-header {
+            color: #666;
+        }
+
+        .navbar-piranha .navbar-nav .dropdown-menu .divider {
+            background: rgba(255, 255, 255, .1);
+        }
+
+        #banner {
+            height: 500px;
+            background: #000 url("./images/banner.png") center center;
+            background-size: auto 100%;
+        }
+
+        @media (min-width: 992px) {
+            .banner02 {
+                padding: 30px 0;
+            }
+        }
+
+        #banner h1 {
+            color: #fff;
+        }
+
+        #banner h3 {
+            color: #999;
+        }
+
+        .banner02 {
+            background: #eee url('./images/banner02bg.png') left bottom no-repeat;
+            background-size: 35% auto;
+            padding: 30px 0 100px;
+        }
+
+        @media (min-width: 992px) {
+            .banner02 {
+                background-size: 25% auto;
+                padding: 40px 0 70px;
+            }
+        }
+
+        .banner03 {
+            background: #555;
+            color: #fff;
+        }
+
+        .projectBox {
+            padding: 20px 0;
+        }
+
+        .project > span {
+            width: 90%;
+            height: 80px;
+            padding: 20px 0;
+            margin: 10px 5%;
+            background: #333;
+            display: block;
+            font-size: 2.8rem;
+        }
+
+        .banner04 {
+            background: #eee;
+        }
+
+        footer {
+            height: 100px;
+            background: #ccc;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-piranha navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><strong>Piranha.Studio</strong></a>
+        </div>
+        <div id="navbar" class=" hidden-xs">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">项目 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">游戏相关</li>
+                        <li><a href="#">egret扩展</a></li>
+                        <li><a href="#">cocos2d-x扩展</a></li>
+                        <li><a href="#">p2.js中文文档</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">JAVA工具类</li>
+                        <li><a href="#">微信支付</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">案例</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row" id="banner">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <h1 class="text-center">Piranha.Studio: &nbsp;&nbsp;&nbsp;&nbsp;</h1>
+
+        <h1 class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;“&nbsp;我们正在进化！”</h1>
+        <br/>
+
+    </div>
+    <div class="row banner02">
+        <div class="col-md-4 text-center">
+
+        </div>
+        <div class="col-md-7">
+            <h2>Piranha.Studio是什么?</h2>
+            <h4>
+                Piranha.Studio是一个非营利性的HTML5开源软件研发团队，致力于推进移动端HTML5的快速发展！<br>
+                我们针对移动端的HTML5游戏设计/开发了多款实用插件，以适应更多使用场景。
+            </h4>
+            <a href="#">了解更多</a>
+
+        </div>
+    </div>
+    <div class="row banner03">
+        <div class="container">
+            <h2>正在进行的项目</h2>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 row text-center projectBox">
+                    <div class="col-sm-6 col-md-4 project">
+                        <span>p2.js中文文档</span>
+                    </div>
+                    <div class="col-sm-6 col-md-4 project">
+                        <span>Egret教程</span>
+                    </div>
+                    <div class="col-sm-6 col-md-4 project">
+                        <span>Wechat Pay</span>
+                    </div>
+                    <div class="col-sm-6 col-md-4 project">
+                        <span>test</span>
+                    </div>
+                    <div class="col-sm-6 col-md-4 project">
+                        <span>test</span>
+                    </div>
+                    <div class="col-sm-6 col-md-4 project">
+                        <span>test</span>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row banner04 text-center">
+        <br/>
+        <br/>
+
+        <h1 class="text-center">与我们联系</h1>
+
+        <a href="#" class="btn btn-link">@E-mail</a>
+        <a href="#" class="btn btn-success">blog</a>
+        <a href="#" class="btn btn-warning">支持我们</a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <br/>
+    copyright &copy; 2015 Piranha.Studio
+</footer>
+
+<script>
+
+    var navAnimating = false;
+    $(window).scroll(function () {
+//        if (navAnimating) return false;
+//        navAnimating = true;
+
+        var $nav = $("nav");
+        if ($nav.length==0 || $(this).scrollTop() > $("#banner").height() - $nav.height() * 2) {
+            $nav.addClass("navFixedBg");
+        } else if ($nav.hasClass("navFixedBg")) {
+            $nav.removeClass("navFixedBg");
+        }
+    });
+</script>
+</body>
+</html>

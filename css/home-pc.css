@@ -1,0 +1,179 @@
+html,body{
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a img{
+    border: none;
+    outline: none;
+}
+#top, #banner,#bottom{
+    width:100%;
+    float: left;
+    margin: 0;
+}
+#top{
+    background: #fff;
+    height: 100px;
+}
+#logo{
+    width: 300px;
+    height: 70px;
+    background: url("../images/logo.png") no-repeat;
+    margin: 15px 0 0 10%;
+    float: left;
+}
+
+#menu{
+    float: right;
+    margin-right: 15%;
+    width: 40%;
+    height: 100px;
+}
+@media all and (max-width: 1300px) {
+    #menu{
+        float: right;
+        margin-right: 5%;
+        width: 40%;
+        height: 100px;
+    }
+}
+#menu li{
+    float: left;
+    width: 25%;
+    height: 100px;
+}
+#menu li a{
+    float: left;
+    width: 100%;
+    height: 20px;
+    padding: 45px 0 35px;
+    font-size: 24px;
+    /*font-family: Arial,"微软雅黑";*/
+
+}
+#menu li a:hover{
+    background: #f0f0f0;
+    height: 17px;
+    border-bottom: 3px solid #f30;
+}
+#banner{
+    background: url("../images/banner.png") center center;
+    background-size: 100% 100%;
+    height: 600px;
+}
+#banner .slo{
+    margin: 250px 0 0 0 ;
+    font-size: 72px;
+    color: rgba(13,235,255,.5);
+    display: block;
+    font-family: "宋体";
+}
+#main{
+    width:70%;
+    margin: 20px 0 0 15%;
+    text-align: left;
+    float: left;
+}
+@media all and (max-width: 1200px) {
+    #main{
+        width:90%;
+        margin: 20px 0 0 5%;
+        text-align: left;
+        float: left;
+    }
+}
+
+#main #left{
+    width:60%;
+    float: left;
+}
+.stitle{
+    width:90%;
+    padding: 15px 5%;
+    float: left;
+    font-size: 24px;
+}
+#left #blogs{
+    width: 100%;
+    float: left;
+}
+#left #blogs li{
+    width: 90%;
+    float: left;
+    padding: 10px 5%;
+}
+#left #blogs .bc1{
+    background: #eaeaea;
+}
+#left #blogs .bc2{
+    background: #eee;
+}
+#left #blogs li:hover{
+    background: #ddd;
+}
+#left #blogs .head{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: #fff;
+}
+#left #blogs .name{
+    width: 200px;
+    height: 20px;
+    margin: 5px 0 0 10px;
+    float: left;
+    font-size: 12px;
+    font-family: Arial;
+}
+#left #blogs .btitle{
+    width: 80%;
+    height: 20px;
+    margin-left: 10px;
+    float: left;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #186768;
+}
+
+#main #right{
+    width:35%;
+    height: 300px;
+    text-align: left;
+    float: right;
+}
+#main #right li{
+    float: left;
+    width: 25%;
+    margin: 10px 0 0 8%;
+}
+#main #right li a{
+    float: left;
+    width: 60%;
+    padding: 20%;
+    background: #ccc;
+    border-radius: 50%;
+}
+#main #right li a img{
+    float: left;
+    width: 100%;
+}
+#bottom{
+    margin: 50px 0 0;
+    height: 20px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    font-family: 'Arial';
+}
